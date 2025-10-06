@@ -8,7 +8,7 @@ explicitamente.
 
 # Como Usar
 
-### `./main <int> <conj_de_caracteres_inerentes> <string_alfabetica> <int>`
+#### `./main <int> <conj_de_parametros_inerentes> <string_alfabetica>`
 
 O primeiro argumento, `int` está intimamente relacionado a qual método usaremos:
 
@@ -17,14 +17,4 @@ O primeiro argumento, `int` está intimamente relacionado a qual método usaremo
 O que se segue são os argumentos inerentes ao método.
 
 / tabela de argumentos para cada método
-
-Finalmente a string relevante.
-
-Por último, se desejamos cripto(`!= 0`) ou decriptografá-la(`0`).
-
-
-
-
-
-
 
