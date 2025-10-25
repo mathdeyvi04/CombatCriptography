@@ -1,0 +1,7 @@
+<map id="Method" name="Method">
+<area shape="rect" id="Node000001" title="Abstract class to standardize method development." alt="" coords="171,5,360,135"/>
+<area shape="rect" id="Node000002" href="$classTransposition_1_1Griding.html" title="Responsible for grouping the functions of the grids method." alt="" coords="5,183,275,367"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="221,148,199,184,194,181,217,145"/>
+<area shape="rect" id="Node000003" href="$classTransposition_1_1Inversion.html" title="Responsible for grouping the functions of the inversion method." alt="" coords="299,183,485,367"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="315,145,337,181,333,184,310,148"/>
+</map>

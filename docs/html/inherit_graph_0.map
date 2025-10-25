@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$classMethod.html" title="Abstract class to standardize method development." alt="" coords="5,31,76,56"/>
+<area shape="rect" id="Node000001" href="$classTransposition_1_1Griding.html" title="Responsible for grouping the functions of the grids method." alt="" coords="131,5,293,31"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="89,34,130,27,131,33,90,39"/>
+<area shape="rect" id="Node000002" href="$classTransposition_1_1Inversion.html" title="Responsible for grouping the functions of the inversion method." alt="" coords="124,55,300,80"/>
+<area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="90,47,124,52,124,58,89,53"/>
+</map>

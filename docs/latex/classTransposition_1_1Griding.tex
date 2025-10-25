@@ -1,0 +1,161 @@
+\doxysection{Transposition\+::Griding Class Reference}
+\hypertarget{classTransposition_1_1Griding}{}\label{classTransposition_1_1Griding}\index{Transposition::Griding@{Transposition::Griding}}
+
+
+Responsible for grouping the functions of the grids method.  
+
+
+
+
+{\ttfamily \#include $<$Transposition.\+hpp$>$}
+
+
+
+Inheritance diagram for Transposition\+::Griding\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{classTransposition_1_1Griding__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Transposition\+::Griding\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTransposition_1_1Griding__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTransposition_1_1Griding_ada43a1460139f0c49f78b289adfdf746}{Griding}} (const \mbox{\hyperlink{classProcessIndicator}{Process\+Indicator}} \&pi\+\_\+1, const \mbox{\hyperlink{classProcessIndicator}{Process\+Indicator}} \&pi\+\_\+2)
+\begin{DoxyCompactList}\small\item\em Funções Inerentes ao Método. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classString}{String}} \mbox{\hyperlink{classTransposition_1_1Griding_a59769a4ba0bc1894b6d00a0da3c4c13c}{crypto}} (const \mbox{\hyperlink{classString}{String}} \&message\+\_\+to\+\_\+be\+\_\+crypto)
+\begin{DoxyCompactList}\small\item\em Encrypted function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classTransposition_1_1Griding_aef66bf184aa9f9cf8fa0dab2859043c3}{debug}} ()
+\begin{DoxyCompactList}\small\item\em Debug function for tests ~\newline
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{classMethod}{Method}}}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{classMethod_a0931b0f198f1fc6cb229ea8372b07564}{if\+\_\+size\+\_\+is\+\_\+valid}} (const int \&size\+\_\+of\+\_\+message)
+\begin{DoxyCompactList}\small\item\em Function that checks if the message size is valid ~\newline
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classTransposition_1_1Griding_afe71714b31c55ebd9130716df535d37b}{grid}} \mbox{[}30\mbox{]}
+\item 
+\mbox{\hyperlink{classProcessIndicator}{Process\+Indicator}} \mbox{\hyperlink{classTransposition_1_1Griding_a636804535664a8493c4e17ceec77a7c6}{process\+\_\+indicators}} \mbox{[}2\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Responsible for grouping the functions of the grids method. 
+
+Definition at line \mbox{\hyperlink{Transposition_8hpp_source_l00081}{81}} of file \mbox{\hyperlink{Transposition_8hpp_source}{Transposition.\+hpp}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classTransposition_1_1Griding_ada43a1460139f0c49f78b289adfdf746}\label{classTransposition_1_1Griding_ada43a1460139f0c49f78b289adfdf746} 
+\index{Transposition::Griding@{Transposition::Griding}!Griding@{Griding}}
+\index{Griding@{Griding}!Transposition::Griding@{Transposition::Griding}}
+\doxysubsubsection{\texorpdfstring{Griding()}{Griding()}}
+{\footnotesize\ttfamily Transposition\+::\+Griding\+::\+Griding (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classProcessIndicator}{Process\+Indicator}} \&}]{pi\+\_\+1,  }\item[{const \mbox{\hyperlink{classProcessIndicator}{Process\+Indicator}} \&}]{pi\+\_\+2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funções Inerentes ao Método. 
+
+Constructor ~\newline
+ 
+\begin{DoxyParams}{Parameters}
+{\em array\+\_\+to\+\_\+process\+\_\+indicators} & Array reporting process, position and group indicators for each indicator \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{Transposition_8hpp_source_l00102}{102}} of file \mbox{\hyperlink{Transposition_8hpp_source}{Transposition.\+hpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classTransposition_1_1Griding_a59769a4ba0bc1894b6d00a0da3c4c13c}\label{classTransposition_1_1Griding_a59769a4ba0bc1894b6d00a0da3c4c13c} 
+\index{Transposition::Griding@{Transposition::Griding}!crypto@{crypto}}
+\index{crypto@{crypto}!Transposition::Griding@{Transposition::Griding}}
+\doxysubsubsection{\texorpdfstring{crypto()}{crypto()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classString}{String}} Transposition\+::\+Griding\+::crypto (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classString}{String}} \&}]{message\+\_\+to\+\_\+be\+\_\+crypto }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Encrypted function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message\+\_\+to\+\_\+be\+\_\+crypto} & It is necessary to have 5m -\/ 2 characters. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{Transposition_8hpp_source_l00116}{116}} of file \mbox{\hyperlink{Transposition_8hpp_source}{Transposition.\+hpp}}.
+
+\Hypertarget{classTransposition_1_1Griding_aef66bf184aa9f9cf8fa0dab2859043c3}\label{classTransposition_1_1Griding_aef66bf184aa9f9cf8fa0dab2859043c3} 
+\index{Transposition::Griding@{Transposition::Griding}!debug@{debug}}
+\index{debug@{debug}!Transposition::Griding@{Transposition::Griding}}
+\doxysubsubsection{\texorpdfstring{debug()}{debug()}}
+{\footnotesize\ttfamily static void Transposition\+::\+Griding\+::debug (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Debug function for tests ~\newline
+ 
+
+
+
+Definition at line \mbox{\hyperlink{Transposition_8hpp_source_l00138}{138}} of file \mbox{\hyperlink{Transposition_8hpp_source}{Transposition.\+hpp}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classTransposition_1_1Griding_afe71714b31c55ebd9130716df535d37b}\label{classTransposition_1_1Griding_afe71714b31c55ebd9130716df535d37b} 
+\index{Transposition::Griding@{Transposition::Griding}!grid@{grid}}
+\index{grid@{grid}!Transposition::Griding@{Transposition::Griding}}
+\doxysubsubsection{\texorpdfstring{grid}{grid}}
+{\footnotesize\ttfamily bool Transposition\+::\+Griding\+::grid\mbox{[}30\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ 1,\ 0,\ 1,\ 1,\ 1,\ 0,\ 1,\ 1,\ 1,\ 1,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ 0,\ 1,\ 0,\ 1,\ 0,\ 1,\ 0,\ 1,\ 0,\ 1,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ 1,\ 0,\ 1,\ 0,\ 1,\ 1,\ 1,\ 0,\ 1,\ 0,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+Definition at line \mbox{\hyperlink{Transposition_8hpp_source_l00084}{84}} of file \mbox{\hyperlink{Transposition_8hpp_source}{Transposition.\+hpp}}.
+
+\Hypertarget{classTransposition_1_1Griding_a636804535664a8493c4e17ceec77a7c6}\label{classTransposition_1_1Griding_a636804535664a8493c4e17ceec77a7c6} 
+\index{Transposition::Griding@{Transposition::Griding}!process\_indicators@{process\_indicators}}
+\index{process\_indicators@{process\_indicators}!Transposition::Griding@{Transposition::Griding}}
+\doxysubsubsection{\texorpdfstring{process\_indicators}{process\_indicators}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classProcessIndicator}{Process\+Indicator}} Transposition\+::\+Griding\+::process\+\_\+indicators\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{Transposition_8hpp_source_l00090}{90}} of file \mbox{\hyperlink{Transposition_8hpp_source}{Transposition.\+hpp}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{Transposition_8hpp}{Transposition.\+hpp}}\end{DoxyCompactItemize}

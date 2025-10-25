@@ -1,0 +1,222 @@
+\doxysection{String Class Reference}
+\hypertarget{classString}{}\label{classString}\index{String@{String}}
+
+
+Abstration of our string\textquotesingle{}s characters. Default is that \textquotesingle{}\textbackslash{}0\textquotesingle{} isnt a char in the string.  
+
+
+
+
+{\ttfamily \#include $<$Importations.\+hpp$>$}
+
+
+
+Collaboration diagram for String\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classString__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classString_afc11dfe845a6736b87de3359d6ebb6a1}{String}} (const int \&size\+\_\+to\+\_\+be\+\_\+reserve=1)
+\begin{DoxyCompactList}\small\item\em \begin{quote}
+Number of char\textquotesingle{}s slots avaiable \end{quote}
+\end{DoxyCompactList}\item 
+\mbox{\hyperlink{classString_ac6b021acaf14bc4f593fb78ca1628ca9}{String}} (const char \texorpdfstring{$\ast$}{*}conj\+\_\+de\+\_\+caracteres)
+\begin{DoxyCompactList}\small\item\em Character pointer-\/based constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classString_ac40b2a3fb58c2d8556f5e6ff73510036}{\texorpdfstring{$\sim$}{\string~}\+String}} ()
+\begin{DoxyCompactList}\small\item\em Default Destructor ~\newline
+ \end{DoxyCompactList}\item 
+const int \& \mbox{\hyperlink{classString_aa7fde21140e5fd675a52ab2b6469d61b}{get\+\_\+size}} () const
+\begin{DoxyCompactList}\small\item\em Getter the size. \end{DoxyCompactList}\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classString_aab1dad4bcf081c40e96cd14d68c8daf0}{get\+\_\+string}} () const
+\begin{DoxyCompactList}\small\item\em Getter the pointer character. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classString_a2489a9d8fe81d51ea489d5aae1b18a6e}{incrementer}} (bool to\+\_\+realloc=\mbox{\hyperlink{Importations_8hpp_add3ca9eefe3b5b754426f51d3043e579}{True}})
+\begin{DoxyCompactList}\small\item\em Increments the size of the character array by one and reallocates to have one more unit available ~\newline
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classString_ad362306389234858c8bf581b6067350a}{array}} = nullptr
+\item 
+int \mbox{\hyperlink{classString_a234db6a5a292cedf838d54ad10458ff1}{size}} = 0
+\begin{DoxyCompactList}\small\item\em \begin{quote}
+Pointer to characters \end{quote}
+\end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classString_a49bc6ec6477c8c87da97188644b70c2e}{capacity}} = 0
+\begin{DoxyCompactList}\small\item\em \begin{quote}
+Number of characters valids \end{quote}
+\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstration of our string\textquotesingle{}s characters. Default is that \textquotesingle{}\textbackslash{}0\textquotesingle{} isnt a char in the string. 
+
+It was preferred to use a proprietary class to avoid using \textquotesingle{}a toolbox too big for something small\textquotesingle{} 
+
+Definition at line \mbox{\hyperlink{Importations_8hpp_source_l00016}{16}} of file \mbox{\hyperlink{Importations_8hpp_source}{Importations.\+hpp}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classString_afc11dfe845a6736b87de3359d6ebb6a1}\label{classString_afc11dfe845a6736b87de3359d6ebb6a1} 
+\index{String@{String}!String@{String}}
+\index{String@{String}!String@{String}}
+\doxysubsubsection{\texorpdfstring{String()}{String()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily String\+::\+String (\begin{DoxyParamCaption}\item[{const int \&}]{size\+\_\+to\+\_\+be\+\_\+reserve = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\begin{quote}
+Number of char\textquotesingle{}s slots avaiable \end{quote}
+
+
+Default Constructor ~\newline
+ 
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{Importations_8hpp_source_l00029}{29}} of file \mbox{\hyperlink{Importations_8hpp_source}{Importations.\+hpp}}.
+
+\Hypertarget{classString_ac6b021acaf14bc4f593fb78ca1628ca9}\label{classString_ac6b021acaf14bc4f593fb78ca1628ca9} 
+\index{String@{String}!String@{String}}
+\index{String@{String}!String@{String}}
+\doxysubsubsection{\texorpdfstring{String()}{String()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily String\+::\+String (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{conj\+\_\+de\+\_\+caracteres }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Character pointer-\/based constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em conj\+\_\+de\+\_\+caracteres} & Const pointer for characters \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{Importations_8hpp_source_l00041}{41}} of file \mbox{\hyperlink{Importations_8hpp_source}{Importations.\+hpp}}.
+
+\Hypertarget{classString_ac40b2a3fb58c2d8556f5e6ff73510036}\label{classString_ac40b2a3fb58c2d8556f5e6ff73510036} 
+\index{String@{String}!````~String@{\texorpdfstring{$\sim$}{\string~}String}}
+\index{````~String@{\texorpdfstring{$\sim$}{\string~}String}!String@{String}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}String()}{\string~String()}}
+{\footnotesize\ttfamily String\+::\texorpdfstring{$\sim$}{\string~}\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default Destructor ~\newline
+ 
+
+
+
+Definition at line \mbox{\hyperlink{Importations_8hpp_source_l00063}{63}} of file \mbox{\hyperlink{Importations_8hpp_source}{Importations.\+hpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classString_aa7fde21140e5fd675a52ab2b6469d61b}\label{classString_aa7fde21140e5fd675a52ab2b6469d61b} 
+\index{String@{String}!get\_size@{get\_size}}
+\index{get\_size@{get\_size}!String@{String}}
+\doxysubsubsection{\texorpdfstring{get\_size()}{get\_size()}}
+{\footnotesize\ttfamily const int \& String\+::get\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter the size. 
+
+
+
+Definition at line \mbox{\hyperlink{Importations_8hpp_source_l00072}{72}} of file \mbox{\hyperlink{Importations_8hpp_source}{Importations.\+hpp}}.
+
+\Hypertarget{classString_aab1dad4bcf081c40e96cd14d68c8daf0}\label{classString_aab1dad4bcf081c40e96cd14d68c8daf0} 
+\index{String@{String}!get\_string@{get\_string}}
+\index{get\_string@{get\_string}!String@{String}}
+\doxysubsubsection{\texorpdfstring{get\_string()}{get\_string()}}
+{\footnotesize\ttfamily const char \texorpdfstring{$\ast$}{*} String\+::get\+\_\+string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter the pointer character. 
+
+
+
+Definition at line \mbox{\hyperlink{Importations_8hpp_source_l00079}{79}} of file \mbox{\hyperlink{Importations_8hpp_source}{Importations.\+hpp}}.
+
+\Hypertarget{classString_a2489a9d8fe81d51ea489d5aae1b18a6e}\label{classString_a2489a9d8fe81d51ea489d5aae1b18a6e} 
+\index{String@{String}!incrementer@{incrementer}}
+\index{incrementer@{incrementer}!String@{String}}
+\doxysubsubsection{\texorpdfstring{incrementer()}{incrementer()}}
+{\footnotesize\ttfamily void String\+::incrementer (\begin{DoxyParamCaption}\item[{bool}]{to\+\_\+realloc = {\ttfamily \mbox{\hyperlink{Importations_8hpp_add3ca9eefe3b5b754426f51d3043e579}{True}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Increments the size of the character array by one and reallocates to have one more unit available ~\newline
+ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\+\_\+realloc} & If you need to relocate, default is True. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{Importations_8hpp_source_l00087}{87}} of file \mbox{\hyperlink{Importations_8hpp_source}{Importations.\+hpp}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classString_ad362306389234858c8bf581b6067350a}\label{classString_ad362306389234858c8bf581b6067350a} 
+\index{String@{String}!array@{array}}
+\index{array@{array}!String@{String}}
+\doxysubsubsection{\texorpdfstring{array}{array}}
+{\footnotesize\ttfamily char\texorpdfstring{$\ast$}{*} String\+::array = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{Importations_8hpp_source_l00019}{19}} of file \mbox{\hyperlink{Importations_8hpp_source}{Importations.\+hpp}}.
+
+\Hypertarget{classString_a49bc6ec6477c8c87da97188644b70c2e}\label{classString_a49bc6ec6477c8c87da97188644b70c2e} 
+\index{String@{String}!capacity@{capacity}}
+\index{capacity@{capacity}!String@{String}}
+\doxysubsubsection{\texorpdfstring{capacity}{capacity}}
+{\footnotesize\ttfamily int String\+::capacity = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\begin{quote}
+Number of characters valids \end{quote}
+
+
+
+
+Definition at line \mbox{\hyperlink{Importations_8hpp_source_l00021}{21}} of file \mbox{\hyperlink{Importations_8hpp_source}{Importations.\+hpp}}.
+
+\Hypertarget{classString_a234db6a5a292cedf838d54ad10458ff1}\label{classString_a234db6a5a292cedf838d54ad10458ff1} 
+\index{String@{String}!size@{size}}
+\index{size@{size}!String@{String}}
+\doxysubsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily int String\+::size = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\begin{quote}
+Pointer to characters \end{quote}
+
+
+
+
+Definition at line \mbox{\hyperlink{Importations_8hpp_source_l00020}{20}} of file \mbox{\hyperlink{Importations_8hpp_source}{Importations.\+hpp}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{Importations_8hpp}{Importations.\+hpp}}\end{DoxyCompactItemize}

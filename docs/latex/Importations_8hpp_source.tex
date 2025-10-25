@@ -1,0 +1,125 @@
+\doxysection{Importations.\+hpp}
+\hypertarget{Importations_8hpp_source}{}\label{Importations_8hpp_source}\index{src/Importations.hpp@{src/Importations.hpp}}
+\mbox{\hyperlink{Importations_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ IMPORTATIONS\_H}}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00002}00002\ \textcolor{preprocessor}{\#define\ IMPORTATIONS\_H}}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00004}\mbox{\hyperlink{Importations_8hpp_add3ca9eefe3b5b754426f51d3043e579}{00004}}\ \textcolor{preprocessor}{\#define\ True\ true}}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00005}\mbox{\hyperlink{Importations_8hpp_a306ebd41c0cd1303b1372c6153f0caf8}{00005}}\ \textcolor{preprocessor}{\#define\ False\ false}}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00007}00007\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00008}00008\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00009}00009\ \textcolor{preprocessor}{\#include\ <stdexcept>}}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00016}\mbox{\hyperlink{classString}{00016}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classString}{String}}\ \{}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00017}00017\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00019}\mbox{\hyperlink{classString_ad362306389234858c8bf581b6067350a}{00019}}\ \ \ \ \ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{classString_ad362306389234858c8bf581b6067350a}{array}}\ =\ \textcolor{keyword}{nullptr};\ }
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00020}\mbox{\hyperlink{classString_a234db6a5a292cedf838d54ad10458ff1}{00020}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classString_a234db6a5a292cedf838d54ad10458ff1}{size}}\ \ \ \ =\ \ \ \ \ \ \ 0;\ }
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00021}\mbox{\hyperlink{classString_a49bc6ec6477c8c87da97188644b70c2e}{00021}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classString_a49bc6ec6477c8c87da97188644b70c2e}{capacity}}\ =\ 0;\ }
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00023}00023\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00029}\mbox{\hyperlink{classString_afc11dfe845a6736b87de3359d6ebb6a1}{00029}}\ \ \ \ \ \mbox{\hyperlink{classString_afc11dfe845a6736b87de3359d6ebb6a1}{String}}(}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00030}00030\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ size\_to\_be\_reserve\ =\ 1}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00031}00031\ \ \ \ \ )\{}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00033}00033\ \ \ \ \ \ \ \ \ this-\/>array\ =\ (\textcolor{keywordtype}{char}*)malloc(size\_to\_be\_reserve\ *\ \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{char}));}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00034}00034\ \ \ \ \ \ \ \ \ this-\/>size\ \ =\ 0;}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00035}00035\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00041}\mbox{\hyperlink{classString_ac6b021acaf14bc4f593fb78ca1628ca9}{00041}}\ \ \ \ \ \mbox{\hyperlink{classString_ac6b021acaf14bc4f593fb78ca1628ca9}{String}}(}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00042}00042\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ conj\_de\_caracteres}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00043}00043\ \ \ \ \ )\{}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00045}00045\ \ \ \ \ \ \ \ \ this-\/>array\ =\ (\textcolor{keywordtype}{char}*)malloc(\textcolor{keyword}{sizeof}(\textcolor{keywordtype}{char}));}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00046}00046\ }
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00047}00047\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}(}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00048}00048\ \ \ \ \ \ \ \ \ \ \ \ \ conj\_de\_caracteres[this-\/>size]\ !=\ \textcolor{charliteral}{'\(\backslash\)0'}}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00049}00049\ \ \ \ \ \ \ \ \ )\{}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00050}00050\ }
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00051}00051\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classString_ad362306389234858c8bf581b6067350a}{array}}[this-\/>\mbox{\hyperlink{classString_a234db6a5a292cedf838d54ad10458ff1}{size}}]\ =\ conj\_de\_caracteres[this-\/>\mbox{\hyperlink{classString_a234db6a5a292cedf838d54ad10458ff1}{size}}];}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00052}00052\ \ \ \ \ \ \ \ \ \ \ \ \ this-\/>size++;}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00053}00053\ }
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00054}00054\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classString_ad362306389234858c8bf581b6067350a}{array}}\ =\ (\textcolor{keywordtype}{char}*)realloc(\mbox{\hyperlink{classString_ad362306389234858c8bf581b6067350a}{array}},\ (this-\/>size\ +\ 1)\ *\ \textcolor{keyword}{sizeof}(char));}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00055}00055\ \ \ \ \ \ \ \ \ \ \ \ \ this-\/>capacity++;}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00056}00056\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00057}00057\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classString_ad362306389234858c8bf581b6067350a}{array}}[this-\/>\mbox{\hyperlink{classString_a234db6a5a292cedf838d54ad10458ff1}{size}}]\ =\ \textcolor{charliteral}{'\(\backslash\)0'};}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00058}00058\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00059}00059\ }
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00063}\mbox{\hyperlink{classString_ac40b2a3fb58c2d8556f5e6ff73510036}{00063}}\ \ \ \ \ \mbox{\hyperlink{classString_ac40b2a3fb58c2d8556f5e6ff73510036}{\string~String}}()\{\ \textcolor{keywordflow}{if}(array)\{\ free(\mbox{\hyperlink{classString_ad362306389234858c8bf581b6067350a}{array}});\ \}\ \}}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00064}00064\ }
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00066}00066\ }
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00070}00070\ \ \ \ \ \textcolor{keyword}{inline}}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00071}00071\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00072}\mbox{\hyperlink{classString_aa7fde21140e5fd675a52ab2b6469d61b}{00072}}\ \ \ \ \ \mbox{\hyperlink{classString_aa7fde21140e5fd675a52ab2b6469d61b}{get\_size}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ this-\/>\mbox{\hyperlink{classString_a234db6a5a292cedf838d54ad10458ff1}{size}};\ \}}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00073}00073\ }
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00077}00077\ \ \ \ \ \textcolor{keyword}{inline}}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00078}00078\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00079}\mbox{\hyperlink{classString_aab1dad4bcf081c40e96cd14d68c8daf0}{00079}}\ \ \ \ \ \mbox{\hyperlink{classString_aab1dad4bcf081c40e96cd14d68c8daf0}{get\_string}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ this-\/>\mbox{\hyperlink{classString_ad362306389234858c8bf581b6067350a}{array}};\ \}\ }
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00080}00080\ }
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00085}00085\ \ \ \ \ \textcolor{keyword}{inline}}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00086}00086\ \ \ \ \ \textcolor{keywordtype}{void}}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00087}\mbox{\hyperlink{classString_a2489a9d8fe81d51ea489d5aae1b18a6e}{00087}}\ \ \ \ \ \mbox{\hyperlink{classString_a2489a9d8fe81d51ea489d5aae1b18a6e}{incrementer}}(\textcolor{keywordtype}{bool}\ to\_realloc\ =\ \mbox{\hyperlink{Importations_8hpp_add3ca9eefe3b5b754426f51d3043e579}{True}})\{}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00088}00088\ \ \ \ \ \ \ \ \ this-\/>size++;}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00089}00089\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(to\_realloc)\{\ this-\/>array\ =\ (\textcolor{keywordtype}{char}*)realloc(this-\/>array,\ (this-\/>size\ +\ 1)\ *\ \textcolor{keyword}{sizeof}(char));\ this-\/>capacity++;\}}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00090}00090\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00091}00091\ \};}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00092}00092\ }
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00096}\mbox{\hyperlink{classProcessIndicator}{00096}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classProcessIndicator}{ProcessIndicator}}\ \{}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00097}00097\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00098}00098\ }
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00099}\mbox{\hyperlink{classProcessIndicator_a918bca169581ded6e4638b845f590ca0}{00099}}\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{classProcessIndicator_a918bca169581ded6e4638b845f590ca0}{process\_indicator}};}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00100}\mbox{\hyperlink{classProcessIndicator_ad633dd550a4c53dd82becdb5b9c2d66d}{00100}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classProcessIndicator_ad633dd550a4c53dd82becdb5b9c2d66d}{position}};}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00101}\mbox{\hyperlink{classProcessIndicator_a0acf07c6a1f87224b8fea0701ffd03a2}{00101}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classProcessIndicator_a0acf07c6a1f87224b8fea0701ffd03a2}{group}};}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00102}00102\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00103}00103\ }
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00104}\mbox{\hyperlink{classProcessIndicator_a1d047460b20817838f21d9bcf12a5afd}{00104}}\ \ \ \ \ \mbox{\hyperlink{classProcessIndicator_a1d047460b20817838f21d9bcf12a5afd}{ProcessIndicator}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00105}00105\ }
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00114}\mbox{\hyperlink{classProcessIndicator_ac68b4f89b2d2431826f83844dc202e9e}{00114}}\ \ \ \ \ \mbox{\hyperlink{classProcessIndicator_ac68b4f89b2d2431826f83844dc202e9e}{ProcessIndicator}}(}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00115}00115\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{classProcessIndicator_a918bca169581ded6e4638b845f590ca0}{process\_indicator}},}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00116}00116\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \ \mbox{\hyperlink{classProcessIndicator_ad633dd550a4c53dd82becdb5b9c2d66d}{position}},}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00117}00117\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \ \mbox{\hyperlink{classProcessIndicator_a0acf07c6a1f87224b8fea0701ffd03a2}{group}}}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00118}00118\ \ \ \ \ )\{}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00119}00119\ }
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00120}00120\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Verificamos\ se\ é\ válido}}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00121}00121\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00122}00122\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classProcessIndicator_a918bca169581ded6e4638b845f590ca0}{process\_indicator}}\ <\ \textcolor{charliteral}{'A'}\ ||\ \mbox{\hyperlink{classProcessIndicator_a918bca169581ded6e4638b845f590ca0}{process\_indicator}}\ >\textcolor{charliteral}{'Z'}\ ||\ \mbox{\hyperlink{classProcessIndicator_ad633dd550a4c53dd82becdb5b9c2d66d}{position\ <\ 0\ ||\ position\ >}}\ 4}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00123}00123\ \ \ \ \ \ \ \ \ )\{}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00124}00124\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00125}00125\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ std::invalid\_argument(\textcolor{stringliteral}{"{}Indicador\ de\ Processo\ inválido!"{}});}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00126}00126\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00127}00127\ }
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00128}00128\ \ \ \ \ \ \ \ \ this-\/>process\_indicator\ =\ \mbox{\hyperlink{classProcessIndicator_a918bca169581ded6e4638b845f590ca0}{process\_indicator}};}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00129}00129\ \ \ \ \ \ \ \ \ this-\/>position\ =\ \mbox{\hyperlink{classProcessIndicator_ad633dd550a4c53dd82becdb5b9c2d66d}{position}};}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00130}00130\ \ \ \ \ \ \ \ \ this-\/>group\ =\ \mbox{\hyperlink{classProcessIndicator_a0acf07c6a1f87224b8fea0701ffd03a2}{group}};}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00131}00131\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00132}00132\ }
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00133}00133\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00134}\mbox{\hyperlink{classProcessIndicator_aeed94a16b47f9aa54de977efc2c21e6c}{00134}}\ \ \ \ \ \mbox{\hyperlink{classProcessIndicator_aeed94a16b47f9aa54de977efc2c21e6c}{get\_char}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ this-\/>\mbox{\hyperlink{classProcessIndicator_a918bca169581ded6e4638b845f590ca0}{process\_indicator}};\ \}}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00135}00135\ \};}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00136}00136\ }
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00149}\mbox{\hyperlink{classMethod}{00149}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classMethod}{Method}}\ \{}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00150}00150\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00151}00151\ }
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00152}\mbox{\hyperlink{classMethod_a5b669b215cb3b7d9fa19861200c8d479}{00152}}\ \ \ \ \ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{classMethod_a5b669b215cb3b7d9fa19861200c8d479}{keys}}[2]\ =\ \{\textcolor{keyword}{nullptr},\ \textcolor{keyword}{nullptr}\};}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00153}\mbox{\hyperlink{classMethod_ac824fe5f5983ff283a314e9869ebb630}{00153}}\ \ \ \ \ \mbox{\hyperlink{classProcessIndicator}{ProcessIndicator}}\ \mbox{\hyperlink{classMethod_ac824fe5f5983ff283a314e9869ebb630}{process\_indicators}}[2];}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00154}00154\ }
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00155}00155\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00156}00156\ }
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00160}00160\ \ \ \ \ \textcolor{keyword}{inline}}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00161}00161\ \ \ \ \ \textcolor{keyword}{static}}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00162}00162\ \ \ \ \ \textcolor{keywordtype}{bool}}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00163}\mbox{\hyperlink{classMethod_a0931b0f198f1fc6cb229ea8372b07564}{00163}}\ \ \ \ \ \mbox{\hyperlink{classMethod_a0931b0f198f1fc6cb229ea8372b07564}{if\_size\_is\_valid}}(}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00164}00164\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ size\_of\_message}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00165}00165\ \ \ \ \ )\{}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00166}00166\ }
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00167}00167\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ !(\ (size\_of\_message\ -\/\ 2)\ \%\ 5\ );}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00168}00168\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00169}00169\ }
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00170}00170\ \};}
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00171}00171\ }
+\DoxyCodeLine{\Hypertarget{Importations_8hpp_source_l00172}00172\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ IMPORTATIONS\_H}}
+
+\end{DoxyCode}

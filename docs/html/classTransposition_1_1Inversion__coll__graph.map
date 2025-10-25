@@ -1,0 +1,7 @@
+<map id="Transposition::Inversion" name="Transposition::Inversion">
+<area shape="rect" id="Node000001" title="Responsible for grouping the functions of the inversion method." alt="" coords="5,416,192,600"/>
+<area shape="rect" id="Node000002" href="$classMethod.html" title="Abstract class to standardize method development." alt="" coords="19,272,179,367"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,380,101,416,96,416,96,380"/>
+<area shape="rect" id="Node000003" href="$classProcessIndicator.html" title="Responsible for represents the process indicators." alt="" coords="11,5,186,209"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="101,210,101,255,96,255,96,210"/>
+</map>
