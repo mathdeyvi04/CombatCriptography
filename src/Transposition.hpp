@@ -37,10 +37,10 @@ public:
 			){
 
 
-				result.array[result.get_size()] = message_to_be_crypto.array[message_to_be_crypto.get_size() - 1 - result.get_size()];				
+				result[result.get_size()] = message_to_be_crypto[message_to_be_crypto.get_size() - 1 - result.get_size()];				
 				result.incrementer();
 			}
-			result.array[result.get_size()] = '\0';
+			result[result.get_size()] = '\0';
 
 			return result;
 		}
@@ -121,10 +121,34 @@ public:
 			
 			// ------------------
 			// Iniciamos aplicação do algoritmo
-			String temp; 
+			String temp(30); 
 
+			int idx = 0;
+			while(
+				idx < message_to_be_crypto.get_size()
+			){
 
-			return temp;
+				temp[temp.get_size()] = message_to_be_crypto[idx] * grid[temp.get_size() % 30];
+				if(!temp[temp.get_size()]){ idx--; temp[temp.get_size()] = '_'; }
+				temp.incrementer(False);
+
+				idx++;
+			}
+
+			// Agora, reorganizar as letras.
+			// Não esquecer dos indicadores de processo.
+			String result(message_to_be_crypto.get_size());
+
+			while(
+				result.get_size() < message_to_be_crypto.get_size()
+			){
+
+				result[result.get_size()] = /* Lógica para pegarmos caracteres corretos. */;
+				result.incrementer(False);
+			}
+			result[result.get_size()] = '\0';
+
+			return result;
 		}
 
 
@@ -142,6 +166,7 @@ public:
 				{'B', 2, 1}
 			);
 
+			String result = exemplo.crypto(String("Deyvisson"));
 
 
 
@@ -154,34 +179,5 @@ public:
 
 	};
 };
-
-/**
- * @brief Apply the method of inversion on the string
- * @param str String to be cript or decript
- * @details
- * 
- * Remember that this method is isomorphic.
- */
-String*
-apply_inversion(
-	String* str
-){
-
-	String* output = (String*)malloc(sizeof(String));
-	output->array = (char*)malloc(str->size * sizeof(char)); // Already reserve
-	output->size = 0;
-
-	while(
-		output->size != str->size
-	){
-
-		output->array[output->size] = str->array[str->size - 1 - output->size];
-		output->size++;
-	}
-
-	output->array[output->size] = '\0';
-
-	return output;
-}
 
 #endif // TRANSPOSITION_H

@@ -18,20 +18,22 @@ private:
 
 	char* array = nullptr; ///> Pointer to characters
 	int size 	=       0; ///> Number of characters valids
-	int capacity = 0; ///> Number of char's slots avaiable
+	int capacity      = 0; ///> Number of char's slots avaiable
 
 public:
 
 	/**
 	 * @brief Default Constructor	
-	 * @param 
+	 * @param size_to_be_reserve Number of slots we are about to reserve
+	 * @details
+	 * For perfomance
 	 */
 	String(
 		const int& size_to_be_reserve = 1
 	){
 
 		this->array = (char*)malloc(size_to_be_reserve * sizeof(char));
-		this->size  = 0;
+		this->capacity += size_to_be_reserve;
 	}
 
 	/**
@@ -68,7 +70,7 @@ public:
 	 * @brief Getter the size
 	 */
 	inline
-	const int&
+	int
 	get_size() const { return this->size; }
 
 	/**
@@ -88,6 +90,21 @@ public:
 		this->size++;
 		if(to_realloc){ this->array = (char*)realloc(this->array, (this->size + 1) * sizeof(char)); this->capacity++;}
 	}
+
+	char&
+	operator[](unsigned int i){
+		if(
+			i > this->size
+		){
+
+			throw std::invalid_argument("Excedeu o tamanho correto.");
+		}
+
+		return this->array[i];
+	}
+
+	const char&
+	operator[](unsigned int i) const { if(i > this->size){ throw std::invalid_argument("Excedeu o tamanho correto."); } return this->array[i]; }
 };
 
 /**
@@ -135,6 +152,35 @@ public:
 };
 
 /**
+ * @brief Responsible for represents the keys 
+ */
+class Key {
+private:
+
+	String key;
+public:
+
+	/**
+	 * @brief Constructor Default
+	 * @details
+	 * Also verifies the size of the key
+	 */
+	Key(
+		const String& key_
+	){
+
+		if(
+			key.get_size() != 10
+		){
+
+			throw std::invalid_argument("Chave inválida");
+		}
+
+		key = std::move(key_);
+	}
+};
+
+/**
  * @brief Abstract class to standardize method development
  * @details
  * There's a pattern for method's class:
@@ -149,7 +195,6 @@ public:
 class Method {
 private:
 
-	char* keys[2] = {nullptr, nullptr};
 	ProcessIndicator process_indicators[2];
 
 public:
